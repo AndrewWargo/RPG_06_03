@@ -25,4 +25,11 @@ public class Protagonist extends Character {
 		attackRating = 0.4;
    }
 
+       public String toString(){
+	playerCard =  "Remaining HP: " + HP + System.lineSeparator() +
+	              "Strength: " + strength + System.lineSeparator() +
+	              "Defense: " + defense + System.lineSeparator() +
+	              "Attack Rating: " + attackRating + System.lineSeparator();
+	return playerCard;
+    }
 }
