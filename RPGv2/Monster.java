@@ -9,7 +9,7 @@ public class Monster extends Character {
     }
 
     public String toString(){
-	monsterCard = "Remaining HP: " + HP + System.lineSeparator() +
+	String monsterCard = "Remaining HP: " + HP + System.lineSeparator() +
 	              "Monster's Strength: " + strength + System.lineSeparator() +
 	              "Monster's defense: " + defense + System.lineSeparator() +
 	              "Attack Rating: " + attackRating + System.lineSeparator();

@@ -75,10 +75,27 @@ public class YoRPG
     try {
 	    name = in.readLine();
     } catch ( IOException e ) { }
+    
+    s = "Daring adventurer, what class art thou, mage, warrior, or knight? (Choose one): ";
+    System.out.println( s );
+    
+    try {
+    	String Pro_class = in.readLine().toLowerCase();
+    	if(Pro_class.equals("warrior")) {
+    		pat = new Warrior( name );
+    	} else if(Pro_class.equals("mage")) {
+    		pat = new Mage( name );
+    	} else if(Pro_class.equals("knight")) {
+    		pat = new Knight( name );
+    	} else {
+    		System.out.println("You've entered your class incorrectly, and are therefore an adventurer lacking specialization" );
+    		pat = new Protagonist( name );
+    	}
+    } catch (IOException e) { }
 
-    //instantiate the player's character
-    pat = new Protagonist( name );
+	System.out.println("Thy Player Card" + System.lineSeparator() + pat);
 
+    
   }//end newGame()
 
 
@@ -98,8 +115,18 @@ public class YoRPG
     else {
 	    System.out.println( "\nLo, yonder monster approacheth!" );
 
-	    smaug = new Monster();
+	    //smaug = new Monster();
 
+	    double monster_type = Math.random() * 3.0;
+	    
+	    if (monster_type < 1.0) {
+	    	smaug = new Goblin();
+	    } else if(monster_type < 2.0) {
+	    	smaug = new Skeleton();
+	    } else {
+	    	smaug = new Zombie();
+	    }
+	    
 	    while( smaug.isAlive() && pat.isAlive() ) {
 
         // Give user the option of using a special attack:
