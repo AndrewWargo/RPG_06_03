@@ -113,7 +113,7 @@ public class YoRPG
     if ( Math.random() >= ( difficulty / 3.0 ) )
 	    System.out.println( "\nNothing to see here. Move along!" );
     else {
-	    System.out.println( "\nLo, yonder monster approacheth!" );
+	    //System.out.println( "\nLo, yonder monster approacheth!" );
 
 	    //smaug = new Monster();
 
@@ -121,10 +121,13 @@ public class YoRPG
 	    
 	    if (monster_type < 1.0) {
 	    	smaug = new Goblin();
+	    	System.out.println("\nLo, a wretched goblin approacheth!");
 	    } else if(monster_type < 2.0) {
 	    	smaug = new Skeleton();
+	    	System.out.println("\nLo, a spooky skeleton approacheth!");
 	    } else {
 	    	smaug = new Zombie();
+	    	System.out.println("\nLo, a decayed zombie rambles forward!");
 	    }
 	    
 	    while( smaug.isAlive() && pat.isAlive() ) {

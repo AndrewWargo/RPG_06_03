@@ -7,7 +7,7 @@ public class Protagonist extends Character {
 		name = hero_name;
 		HP = 125;
 		strength = 100;
-		defense = 30;
+		defense = 25;
 		attackRating = 0.4;
 	}
 	
