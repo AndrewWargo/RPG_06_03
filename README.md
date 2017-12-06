@@ -27,6 +27,7 @@ A) Protagonist - herolike subclass of Character -
    the protagonist has.
 
    Subclasses (Different protagonist/hero classes):
+   
     i)   Knight - Increased defense
 
     ii)  Mage - Increased attackRating
@@ -41,6 +42,7 @@ B) Monster - Enemies of Protagonist; subclass of Character -
      ~Currently none
 
    Subclasses:
+   
      i)   Goblin - Increased strength
 
      ii)  Skeleton - Increased defense
