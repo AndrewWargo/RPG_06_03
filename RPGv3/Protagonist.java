@@ -19,7 +19,7 @@ public abstract class Protagonist extends Character {
 	
 	abstract void normalize();
 
-       public String toString(){
+       public abstract String toString(){
 	String playerCard =  "Remaining HP: " + HP + System.lineSeparator() +
 	              "Strength: " + strength + System.lineSeparator() +
 	              "Defense: " + defense + System.lineSeparator() +

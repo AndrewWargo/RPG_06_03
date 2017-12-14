@@ -8,4 +8,14 @@ public class Mage extends Protagonist {
     public String toString() {
  	   return "Mage " + name + System.lineSeparator() + super.toString();
     }
+
+    public void specialize(){
+	attackrating = 0.6;
+	defense = 20;
+    }
+
+    public void normalize(){
+	attackerating = 0.5;
+	defense = 25;
+    }
 }
